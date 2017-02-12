@@ -18,7 +18,6 @@ const server = new Hapi.Server()
 
 // Define PORT number
 server.connection({
-  host: '127.0.0.1',
   port: config.port
 });
 
