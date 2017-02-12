@@ -1,0 +1,38 @@
+{
+  "name": "sidigdoyo-contact-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server",
+    "lint": "eslint .",
+    "test": "lab -t 100 --coverage --sourcemaps --coverage-exclude config --coverage-exclude test --coverage-exclude node_modules --coverage-exclude server -r console -o stdout -r html -o ./coverage.html --leaks"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdlingenium/sidigdoyo-contact-service.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mdlingenium/sidigdoyo-contact-service/issues"
+  },
+  "homepage": "https://github.com/mdlingenium/sidigdoyo-contact-service#readme",
+  "dependencies": {
+    "code": "^4.0.0",
+    "express": "^4.14.1",
+    "hapi": "^16.1.0",
+    "hapi-swagger": "^7.6.0",
+    "inert": "^4.1.0",
+    "joi": "^10.2.1",
+    "lab": "5.x.x",
+    "supertest": "^3.0.0",
+    "tape": "^4.6.3",
+    "vision": "^4.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^3.15.0",
+    "nodemon": "^1.11.0"
+  }
+}
